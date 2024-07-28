@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <linl >
+    <title>navgurukul member directory</title>
+</head>
+<body>
+    
+    <form id="form">
+        <h1>Navgurukul Member Directory</h1>
+
+        <label for="name">Name:</label> 
+        <input class="box" type="text" id="name" name="name" placeholder="enter your name" required>
+        
+        <br>
+
+        <label for="last name">Last name:</label> 
+        <input type="text"  class="box" id="last name" name="last name" placeholder="enter your last name" required><br>
+        
+        <label for="email">Email address:</label>
+        <input  class="box"  name="email" type="email" id="email" placeholder="enter your email"><br>
+        <small class="error" id="emailaddresserror"></small><br>
+
+        <label for="password">Set Password:</label>
+        <input  class="box" name="password" type="password" id="password" placeholder="enter your password">
+        <span id="togglePassword" class="fas fa-eye"> &#128065;</span>
+        <small class="error" id="passworderror"></small><br>
+
+        
+        <label for="phone">Phone number:</label>
+        <input  class="box" name="phone" type="tel" id="phone" placeholder="enter your phone number"><br>
+        
+
+    
+            <label>Select your role:</label><br>
+            
+            <input type="radio" id="student" name="role" value="student" required>
+            <label for="student">Student</label><br>
+            
+            <input type="radio" id="teammember" name="role" value="teammember" required>
+            <label for="teammember">Team member</label><br>
+            
+            <input type="radio" id="alumni" name="role" value="alumni" required>
+            <label for="alumni">Alumni</label><br>
+            
+         
+
+       <br>
+       <label for="campus">Campus name:</label>
+        <select name="campus" id="campus">
+            <option value="please select">please select</option>
+            <option value="Raipur">Raipur</option>
+            <option value="Jashpur">Jashpur</option>
+            <option value="Udaipur">Udaipur</option> 
+            <option value="Dantevada">Dantevada</option>
+            <option value="Dharmshala">Dharmshala</option>
+            <option value="Sarjapur">Sarjapur</option>
+            <option value="Bangalore">Bangalore</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Pune">pune</option>
+         </select><br>
+       <button type="submit">Submit</button>
+    <p id="successMessage" style="color: green; display: none;">Form submitted successfully!</p> 
+    <p class="submitError" id="submitError">Please fill out all fields correctly.</p>
+    </form>
+<script src="script.js"></script>
+    
+</body>
+</html>
